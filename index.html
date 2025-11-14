@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>O meni – Ema Tomić</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>O meni</h1>
+
+  <p>
+    Moje ime je <strong>Ema Tomić</strong> i studentica sam grafičkog dizajna.
+    <em>Volim glazbu</em>, prirodu i kreativnost. Moj najdraži otok za ljetovanje je
+    otok Vis<sup>*</sup>.
+  </p>
+
+  <p><sup>*</sup>Jer tamo more ima najljepšu <span class="istaknuto">tirkiznu</span> boju.</p>
+
+  <h2>Što volim raditi?</h2>
+  <ul class="lista1">
+    <li>Svirati klavir</li>
+    <li>Pjevati</li>
+    <li>Putovati</li>
+    <li>Trenirati</li>
+  </ul>
+
+  <h2>Omiljeni žanrovi glazbe</h2>
+  <ol class="lista2">
+    <li>Rock</li>
+    <li>Klasika</li>
+    <li>Jazz</li>
+  </ol>
+
+  <p>
+    Moj rođendan je 7.<sup>12.</sup>, a jedan od poznatih jazz akorda je C<sub>maj7</sub>. 🎶
+  </p>
+
+  <!-- ====== FORMA ====== -->
+  <section>
+    <h2>Kontakt forma</h2>
+    <form>
+      <fieldset>
+        <legend>Ostavi poruku</legend>
+
+        <label for="ime">Ime i prezime:</label><br>
+        <input type="text" id="ime" name="ime" placeholder="Upišite svoje ime"><br><br>
+
+        <label for="email">E-mail adresa:</label><br>
+        <input type="email" id="email" name="email" placeholder="primjer@email.com"><br><br>
+
+        <label for="tema">Odaberi temu:</label><br>
+        <select id="tema" name="tema">
+          <option value="glazba">Glazba</option>
+          <option value="putovanja">Putovanja</option>
+          <option value="dizajn">Dizajn</option>
+          <option value="ostalo">Ostalo</option>
+        </select><br><br>
+
+        <label for="boja">Omiljena boja:</label><br>
+        <input list="boje" id="boja" name="boja" placeholder="Odaberi boju">
+        <datalist id="boje">
+          <option value="Ljubičasta">
+          <option value="Tirkizna">
+          <option value="Ružičasta">
+          <option value="Zelena">
+        </datalist><br><br>
+
+        <label for="poruka">Poruka:</label><br>
+        <input type="text" id="poruka" name="poruka" placeholder="Upišite kratku poruku"><br><br>
+
+        <button type="submit">Pošalji</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- ====== NOVI DIO — TABLICA ZA ZADATAK 4 ====== -->
+  <section>
+    <h2>Moj tjedni raspored aktivnosti</h2>
+
+    <table class="raspored">
+      <thead>
+        <tr>
+          <th>Dan</th>
+          <th>Aktivnost</th>
+          <th>Vrijeme</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">Ponedjeljak</td>
+          <td>Predavanja</td>
+          <td>08:00 – 12:00</td>
+        </tr>
+        <tr>
+          <td>Zbor</td>
+          <td>20:00-22:00</td>
+        </tr>
+
+        <tr>
+          <td>Utorak</td>
+          <td colspan="2">Učenje & projekti</td>
+        </tr>
+
+        <tr>
+          <td>Srijeda</td>
+          <td>Zbor</td>
+          <td>17:00 – 19:00</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
