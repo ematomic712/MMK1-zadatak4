@@ -8,38 +8,49 @@
 </head>
 
 <body>
-  <h1>O meni</h1>
 
-  <p>
-    Moje ime je <strong>Ema Tomić</strong> i studentica sam grafičkog dizajna.
-    <em>Volim glazbu</em>, prirodu i kreativnost. Moj najdraži otok za ljetovanje je
-    otok Vis<sup>*</sup>.
-  </p>
+  <header id="zaglavlje">
+    <h1>O meni</h1>
+  </header>
 
-  <p><sup>*</sup>Jer tamo more ima najljepšu <span class="istaknuto">tirkiznu</span> boju.</p>
+  <section id="uvod">
+    <p>
+      Moje ime je <strong>Ema Tomić</strong> i studentica sam grafičkog dizajna.
+      <em>Volim glazbu</em>, prirodu i kreativnost. Moj najdraži otok za ljetovanje je
+      otok Vis<sup>*</sup>.
+    </p>
 
-  <h2>Što volim raditi?</h2>
-  <ul class="lista1">
-    <li>Svirati klavir</li>
-    <li>Pjevati</li>
-    <li>Putovati</li>
-    <li>Trenirati</li>
-  </ul>
+    <p><sup>*</sup>Jer tamo more ima najljepšu <span class="istaknuto">tirkiznu</span> boju.</p>
+  </section>
 
-  <h2>Omiljeni žanrovi glazbe</h2>
-  <ol class="lista2">
-    <li>Rock</li>
-    <li>Klasika</li>
-    <li>Jazz</li>
-  </ol>
+  <section id="blokovi">
+    <div class="kutija">
+      <h2>Što volim raditi?</h2>
+      <ul class="lista1">
+        <li>Svirati klavir</li>
+        <li>Pjevati</li>
+        <li>Putovati</li>
+        <li>Trenirati</li>
+      </ul>
+    </div>
 
-  <p>
+    <div class="kutija">
+      <h2>Omiljeni žanrovi glazbe</h2>
+      <ol class="lista2">
+        <li>Rock</li>
+        <li>Klasika</li>
+        <li>Jazz</li>
+      </ol>
+    </div>
+  </section>
+
+  <p id="srednji-tekst">
     Moj rođendan je 7.<sup>12.</sup>, a jedan od poznatih jazz akorda je C<sub>maj7</sub>. 🎶
   </p>
 
-  <!-- ====== FORMA ====== -->
-  <section>
+  <section id="kontakt">
     <h2>Kontakt forma</h2>
+
     <form>
       <fieldset>
         <legend>Ostavi poruku</legend>
@@ -73,45 +84,7 @@
         <button type="submit">Pošalji</button>
       </fieldset>
     </form>
-  </section>
 
-  <!-- ====== NOVI DIO — TABLICA ZA ZADATAK 4 ====== -->
-  <section>
-    <h2>Moj tjedni raspored aktivnosti</h2>
-
-    <table class="raspored">
-      <thead>
-        <tr>
-          <th>Dan</th>
-          <th>Aktivnost</th>
-          <th>Vrijeme</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td rowspan="2">Ponedjeljak</td>
-          <td>Predavanja</td>
-          <td>08:00 – 12:00</td>
-        </tr>
-        <tr>
-          <td>Zbor</td>
-          <td>20:00-22:00</td>
-        </tr>
-
-        <tr>
-          <td>Utorak</td>
-          <td colspan="2">Učenje & projekti</td>
-        </tr>
-
-        <tr>
-          <td>Srijeda</td>
-          <td>Zbor</td>
-          <td>17:00 – 19:00</td>
-        </tr>
-
-      </tbody>
-    </table>
   </section>
 
 </body>

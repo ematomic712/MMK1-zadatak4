@@ -5,6 +5,19 @@ body {
   margin: 40px;
 }
 
+#zaglavlje {
+  position: sticky;
+  top: 0;
+  background-color: #e2d2f7;
+  padding-bottom: 5px;
+  z-index: 1000;
+}
+
+#uvod p {
+  max-width: 700px;
+  margin: 15px auto;
+}
+
 h1 {
   font-weight: 600;
   color: #5b3e96;
@@ -36,27 +49,55 @@ p {
   font-weight: 600;
 }
 
+#blokovi {
+  margin-top: 40px;
+}
+
+.kutija {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 20px;
+  float: left;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.07);
+}
+
+#blokovi::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#blokovi .kutija h2 {
+  text-align: center;
+}
+
 .lista1 {
   list-style: square;
-  background-color: #ffffff;
-  padding: 15px;
-  display: inline-block;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .lista2 {
   list-style: decimal-leading-zero;
-  text-align: left;
-  margin-left: 40px;
+  padding: 10px;
 }
 
 .lista1 li,
 .lista2 li {
-  display: block;
   margin: 5px 0;
 }
 
+#srednji-tekst {
+  text-align: center;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40px;
+}
+
+/* Kontakt forma */
 form {
   background-color: #ffffff;
   border-radius: 10px;
@@ -67,4 +108,43 @@ form {
 }
 
 fieldset {
-  border: 2px
+  border: 2px solid #5b3e96;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: 600;
+  color: #5b3e96;
+  background-color: #e2d2f7;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: 600;
+  color: #3a2e4d;
+}
+
+input, select, button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #c6b5df;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+
+button {
+  background-color: #5b3e96;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #7c5dc1;
+}
