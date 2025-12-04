@@ -5,17 +5,9 @@ body {
   margin: 40px;
 }
 
-#zaglavlje {
-  position: sticky;
-  top: 0;
-  background-color: #e2d2f7;
-  padding-bottom: 5px;
-  z-index: 1000;
-}
-
-#uvod p {
-  max-width: 700px;
-  margin: 15px auto;
+h2 {
+  color: #5b3e96;
+  margin-top: 25px;
 }
 
 h1 {
@@ -25,12 +17,6 @@ h1 {
   padding: 15px;
   text-align: center;
   border-radius: 10px;
-}
-
-h2 {
-  color: #5b3e96;
-  text-align: left;
-  margin-top: 25px;
 }
 
 p {
@@ -49,101 +35,77 @@ p {
   font-weight: 600;
 }
 
-#blokovi {
-  margin-top: 40px;
-}
-
-.kutija {
-  background-color: #ffffff;
-  width: 300px;
-  padding: 20px;
-  float: left;
-  border-radius: 10px;
-  margin: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.07);
-}
-
-#blokovi::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-#blokovi .kutija h2 {
-  text-align: center;
-}
-
 .lista1 {
   list-style: square;
-  padding: 10px;
+  background-color: #ffffff;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .lista2 {
   list-style: decimal-leading-zero;
-  padding: 10px;
+  margin-left: 40px;
 }
 
 .lista1 li,
 .lista2 li {
+  display: block;
   margin: 5px 0;
 }
 
-#srednji-tekst {
-  text-align: center;
-  width: fit-content;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 40px;
-}
-
-form {
+.media-blok {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
-  max-width: 600px;
-  margin: 25px auto;
-  box-shadow: 0 0 8px #d3c4e3;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.07);
 }
 
-fieldset {
-  border: 2px solid #5b3e96;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-legend {
-  font-weight: 600;
-  color: #5b3e96;
-  background-color: #e2d2f7;
-  padding: 6px 10px;
-  border-radius: 5px;
-}
-
-label {
-  font-weight: 600;
-  color: #3a2e4d;
-}
-
-input, select, button {
-  font-family: 'Nunito', sans-serif;
-  font-size: 14px;
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #c6b5df;
+.profil-foto {
   width: 100%;
-  box-sizing: border-box;
-  margin-top: 4px;
+  border-radius: 10px;
 }
 
-button {
-  background-color: #5b3e96;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 10px;
+.yt-video {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
 }
 
-button:hover {
-  background-color: #7c5dc1;
+@media (max-width: 600px) {
+  body {
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .yt-video {
+    height: 200px;
+  }
+
+  .media-blok {
+    padding: 15px;
+  }
+}
+.video-opis {
+  background-color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 10px auto 25px;
+  color: #3a2e4d;
+  line-height: 1.6;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  text-align: left;
 }

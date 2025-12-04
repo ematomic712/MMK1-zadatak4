@@ -8,84 +8,64 @@
 </head>
 
 <body>
+  <h1>O meni</h1>
 
-  <header id="zaglavlje">
-    <h1>O meni</h1>
-  </header>
+  <p>
+    Moje ime je <strong>Ema Tomić</strong> i studentica sam grafičkog dizajna.
+    <em>Volim glazbu</em>, prirodu i kreativnost. Moj najdraži otok za ljetovanje je
+    otok Vis<sup>*</sup>.
+  </p>
 
-  <section id="uvod">
-    <p>
-      Moje ime je <strong>Ema Tomić</strong> i studentica sam grafičkog dizajna.
-      <em>Volim glazbu</em>, prirodu i kreativnost. Moj najdraži otok za ljetovanje je
-      otok Vis<sup>*</sup>.
-    </p>
+  <p><sup>*</sup>Jer tamo more ima najljepšu <span class="istaknuto">tirkiznu</span> boju.</p>
 
-    <p><sup>*</sup>Jer tamo more ima najljepšu <span class="istaknuto">tirkiznu</span> boju.</p>
-  </section>
+  <h2>Što volim raditi?</h2>
+  <ul class="lista1">
+    <li>Svirati klavir</li>
+    <li>Pjevati</li>
+    <li>Putovati</li>
+    <li>Trenirati</li>
+  </ul>
 
-  <section id="blokovi">
-    <div class="kutija">
-      <h2>Što volim raditi?</h2>
-      <ul class="lista1">
-        <li>Svirati klavir</li>
-        <li>Pjevati</li>
-        <li>Putovati</li>
-        <li>Trenirati</li>
-      </ul>
-    </div>
+  <h2>Omiljeni žanrovi glazbe</h2>
+  <ol class="lista2">
+    <li>Rock</li>
+    <li>Klasika</li>
+    <li>Jazz</li>
+  </ol>
 
-    <div class="kutija">
-      <h2>Omiljeni žanrovi glazbe</h2>
-      <ol class="lista2">
-        <li>Rock</li>
-        <li>Klasika</li>
-        <li>Jazz</li>
-      </ol>
-    </div>
-  </section>
-
-  <p id="srednji-tekst">
+  <p>
     Moj rođendan je 7.<sup>12.</sup>, a jedan od poznatih jazz akorda je C<sub>maj7</sub>. 🎶
   </p>
 
-  <section id="kontakt">
-    <h2>Kontakt forma</h2>
-
-    <form>
-      <fieldset>
-        <legend>Ostavi poruku</legend>
-
-        <label for="ime">Ime i prezime:</label><br>
-        <input type="text" id="ime" name="ime" placeholder="Upišite svoje ime"><br><br>
-
-        <label for="email">E-mail adresa:</label><br>
-        <input type="email" id="email" name="email" placeholder="primjer@email.com"><br><br>
-
-        <label for="tema">Odaberi temu:</label><br>
-        <select id="tema" name="tema">
-          <option value="glazba">Glazba</option>
-          <option value="putovanja">Putovanja</option>
-          <option value="dizajn">Dizajn</option>
-          <option value="ostalo">Ostalo</option>
-        </select><br><br>
-
-        <label for="boja">Omiljena boja:</label><br>
-        <input list="boje" id="boja" name="boja" placeholder="Odaberi boju">
-        <datalist id="boje">
-          <option value="Ljubičasta">
-          <option value="Tirkizna">
-          <option value="Ružičasta">
-          <option value="Zelena">
-        </datalist><br><br>
-
-        <label for="poruka">Poruka:</label><br>
-        <input type="text" id="poruka" name="poruka" placeholder="Upišite kratku poruku"><br><br>
-
-        <button type="submit">Pošalji</button>
-      </fieldset>
-    </form>
-
+  <section class="media-blok">
+    <h2>Moja fotografija</h2>
+    <img src="slike_MMK/slika1.jpg" alt="Fotografija mene" class="profil-foto">
   </section>
+
+  <section class="media-blok">
+  <h2>Moj omiljeni bend</h2>
+  <p>
+    Više o mojoj omiljenoj grupi možete pronaći ovdje:  
+    <a href="https://www.pinkfloyd.com/" target="_blank">Pink Floyd – službena stranica</a>
+  </p>
+</section>
+
+ <section class="media-blok">
+  <h2>Video koji volim</h2>
+
+  <iframe 
+    src="https://www.youtube.com/embed/Oi6ZjkXFlcU"
+    title="YouTube video"
+    class="yt-video"
+    allowfullscreen>
+  </iframe>
+
+  <p class="video-opis">
+    Ovo je izvedba <strong>Mahlerove 2. simfonije</strong> snimljena u
+    veličanstvenoj <em>Ely Cathedral</em> u Cambridgeshiru u Engleskoj.
+    Predvodi je moj najdraži dirigent, <strong>Leonard Bernstein</strong>.
+</section>
+
 
 </body>
 </html>
