@@ -39,7 +39,7 @@
 
   <section class="media-blok">
     <h2>Moja fotografija</h2>
-    <img src="Slike_MMK/slika1.JPG" alt="Fotografija mene" class="profil-foto">
+    <img src="slike_MMK/slika1.jpg" alt="Fotografija mene" class="profil-foto">
   </section>
 
   <section class="media-blok">
@@ -69,3 +69,15 @@
 
 </body>
 </html>
+<section class="media-blok">
+  <h2>Mali audio primjer</h2>
+
+  <audio id="mojAudio">
+    <source src="audio/marjan.mp3" type="audio/mpeg">
+    Vaš preglednik ne podržava audio element.
+  </audio>
+
+  <button onclick="document.getElementById('mojAudio').play()">
+    ▶ Pusti zvuk
+  </button>
+</section>
