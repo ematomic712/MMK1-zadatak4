@@ -39,7 +39,7 @@
 
   <section class="media-blok">
     <h2>Moja fotografija</h2>
-    <img src="slike_MMK/slika1.jpg" alt="Fotografija mene" class="profil-foto">
+    <img src="Slike_MMK/slika1.JPG" alt="Fotografija mene" class="profil-foto">
   </section>
 
   <section class="media-blok">
@@ -70,14 +70,18 @@
 </body>
 </html>
 <section class="media-blok">
-  <h2>Mali audio primjer</h2>
+  <h2>Interakcija s elementima</h2>
 
-  <audio id="mojAudio">
-    <source src="audio/marjan.mp3" type="audio/mpeg">
-    Vaš preglednik ne podržava audio element.
-  </audio>
-
-  <button onclick="document.getElementById('mojAudio').play()">
-    ▶ Pusti zvuk
+  <button class="interakcija-gumb">
+    Prijeđi mišem preko mene
   </button>
+
+  <div class="slika-wrapper">
+    <img src="Slike_MMK/slika1.jpg" alt="Interaktivna slika" class="interaktivna-slika">
+  </div>
+
+  <p class="video-opis">
+    Gumb i slika reagiraju na interakciju korisnika pomoću CSS pseudo-selektora,
+    tranzicija i transformacija.
+  </p>
 </section>
